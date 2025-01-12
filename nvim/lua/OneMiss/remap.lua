@@ -13,7 +13,6 @@ vim.keymap.set({ "n", "v" }, "cH", "c^")
 vim.keymap.set({ "n", "v" }, "cL", "c$")
 vim.keymap.set({ "n", "v" }, "yH", "y^")
 vim.keymap.set({ "n", "v" }, "yL", "y$")
-
 -- buffer delete
 vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
 -- save like a pleb
@@ -25,4 +24,7 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
-
+-- Buffer opening faster
+vim.keymap.set("n", "<leader>|", ":vsplit\n")
+-- close windows easier
+vim.keymap.set("n", "<leader>q", ":q\n")
